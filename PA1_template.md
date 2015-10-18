@@ -1,4 +1,10 @@
-# Reproducible Research: Peer Assessment 1
+---
+title: "Reproducible Research: Peer Assessment 1"
+output: 
+  html_document:
+    keep_md: true
+---
+
 
 ## Loading and preprocessing the data
 
@@ -71,7 +77,7 @@ hist( steps_per_day$steps,
       xlab = NULL)
 ```
 
-![](PA1_template_files/figure-html/histogram_ignore_NA-1.png) 
+![plot of chunk histogram_ignore_NA](figure/histogram_ignore_NA-1.png) 
 
 3. Calculate and report the mean and median of the total number of steps taken per day.
 
@@ -118,7 +124,7 @@ plot.ts(interval_average$interval,
         ylab = "Number of Steps")
 ```
 
-![](PA1_template_files/figure-html/Time_series_plot_average_steps -1.png) 
+![plot of chunk Time_series_plot_average_steps ](figure/Time_series_plot_average_steps -1.png) 
 
 3. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -189,7 +195,7 @@ hist( updated_steps_per_day$steps,
       xlab = NULL)
 ```
 
-![](PA1_template_files/figure-html/histogram_all-1.png) 
+![plot of chunk histogram_all](figure/histogram_all-1.png) 
 
 4. Re-calculate and report the mean and median of the total number of steps taken per day.
 
@@ -263,4 +269,4 @@ g + geom_line( color="darkblue" ) +
         title = "Average Number of Steps Taken Per 5 Minute Interval")
 ```
 
-![](PA1_template_files/figure-html/panel_plot_by_weekday_weekend -1.png) 
+![plot of chunk panel_plot_by_weekday_weekend ](figure/panel_plot_by_weekday_weekend -1.png) 
